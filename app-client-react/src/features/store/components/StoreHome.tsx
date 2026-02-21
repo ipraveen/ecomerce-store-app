@@ -7,7 +7,6 @@ export const StoreHome = () => {
     if (isLoading) return <div className="spinner">Loading fresh groceries...</div>;
 
     if (isError) return <div className="error">Error loading products. Please refresh.</div>;
-
     return (
         <div className="container grid grid-cols-3 gap-6">
             {products?.map((product) => (
