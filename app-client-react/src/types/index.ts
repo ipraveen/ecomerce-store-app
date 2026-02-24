@@ -1,17 +1,21 @@
-export interface Product {
-    id: number;
-    name: string;
-    imageUrl: string;
-    description: string;
-    price: number;
-    categoryId: number;
-}
+export type { Product, ProductCategory } from './product.types';
+export type { CartItem, CartContextValue } from './cart.types';
+export type { CheckoutStep, ShippingInfo, PaymentInfo, CheckoutContextValue } from './checkout.types';
 
-export interface CartItem {
-    product: Product;
-    quantity: number;
-    totalPrice: number;
-}
+// export interface Product {
+//     id: number;
+//     name: string;
+//     imageUrl: string;
+//     description: string;
+//     price: number;
+//     categoryId: number;
+// }
+
+// export interface CartItem {
+//     product: Product;
+//     quantity: number;
+//     totalPrice: number;
+// }
 
 export interface CartState {
     id: string;
