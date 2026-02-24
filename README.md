@@ -6,7 +6,7 @@
 Run below command on Terminal
 
 ```
-docker compose up
+docker compose up -d
 
 ```
 
@@ -28,3 +28,10 @@ docker compose logs -f otel-collector
 docker compose rm -s -v otel-collector
 ```
 
+
+## Grafna
+
+```
+http://localhost:3000/
+
+```
